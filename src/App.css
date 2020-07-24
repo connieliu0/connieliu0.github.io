@@ -1,0 +1,274 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+.project-image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.project-image img{
+  width: 300px;
+  height: 300px;
+}
+.bodytext li{
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 15px;
+  line-height: 25px;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.05em;
+  line-height: 25px;
+}
+hr{
+  border-color: rgb(255, 173, 176);
+  background-color: rgb(255, 173, 176);
+  border-style: solid;
+  margin-top: 0px;
+  padding-top: 0px;
+  text-decoration: none;
+}
+h2{
+  margin-bottom: 7px;
+  text-align: center;
+}
+.row h2{
+  text-align: left;
+}
+.content {
+  transition: .5s ease;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
+}
+.bodytextwide p{
+  text-align: center;
+}
+.project:hover .project-image {
+  color: rgb(204, 111, 111);
+  opacity: 0.3;
+}
+
+.project:hover .content {
+  opacity: 1;
+}
+.project-title{
+  margin-top: 40px;
+  font-size: 20px;
+}
+.content {
+  position: relative;
+}
+.footer{
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.footer p{
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.footer a{
+  font-size: 135%;
+}
+.nochange a{
+  font-size: 100%;
+}
+a{
+  text-decoration: none;
+  color: rgb(204, 111, 111);
+}
+a:hover{
+  animation-name: fade;
+  animation-duration: 1s;
+  color: rgb(115, 33, 33);
+}
+@keyframes fade {
+  from {color: rgb(204, 111, 111);}
+  to {color: rgb(115, 33, 33);}
+}
+.projmargins{
+  margin-left: 15%;
+  margin-right: 15%;
+  display: block;
+}
+.projmargins h2{
+  text-align: left;
+}
+.center{
+  text-align: center;
+}
+.center1{
+  text-align: center;
+}
+.parent{
+  display: flex;
+   overflow: hidden;
+   margin: 1em 0;
+}
+.col{
+  display: flex;
+   flex-direction: column;
+   flex-basis: 100%;
+   flex: 50%;
+}
+.row{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.col{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+}
+.col img{
+  width: 50%;
+  position: relative;
+  width: 30vw;
+}
+.bodytext{
+  padding-left: 7%;
+  padding-right: 7%;
+}
+.projmargins .row{
+  flex-wrap: nowrap;
+}
+.row{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.project{
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 20px;
+}
+.part1 img{
+  margin-top: 20%;
+  position: relative;
+  display: inline-block;
+  box-shadow: 7px 7px rgb(255, 173, 176);
+}
+.part2{
+  position: relative;
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 60%;
+}
+.navigation h1{
+  padding-left: 7%;
+  padding-right: 7%;
+  text-align: left;
+}
+.header{
+  text-align: left;
+}
+.item{
+  color: black;
+  margin-left: 7%;
+  padding: 1%;
+  background-image: linear-gradient(rgb(255, 242, 242), rgb(255, 242, 242));
+  background-repeat: no-repeat;
+  background-size: 100% 0.5em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+.item:hover {
+    background-size: 100% 88%;
+}
+.header h1{
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.header h2{
+  margin-top: 5px;
+  padding-top: 0px;
+  margin-bottom: 25px;
+  font-size: 110%;
+  text-align: center;
+  color: rgb(255, 173, 176);
+}
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+  text-align: left;
+  font-size: 45px;
+}
+h2{
+  font-size: 30px;;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.dropdwn h3{
+  display: inline-block;
+  margin-top: 0px;
+}
+.dropdwn button{
+  display: inline-block;
+  border: none;
+  background: white;
+}
+.listtext{
+  display: inline-block;
+}
+.listtext1{
+  display: flex;
+  flex-direction: row;
+}
+.center img{
+  width: 800px;
+}
+.center1 img{
+  width: 400px;
+}
+@media (max-width: 900px) {
+
+  hr{
+margin-top: 3%;
+}
+.center img{
+  width: 90vw;
+}
+.projmargins img{
+  width: 90vw;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.projmargins .row{
+  flex-direction: column;
+}
+.col{
+  margin: 0px;
+}
+  .projmargins{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .bodytext{
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
