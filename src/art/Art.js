@@ -9,8 +9,9 @@ function Art(props) {
       <div className="bodytext">
       <div className="titledesc">
     </div>
-          <hr/><h2>Art</h2>
-          <p class="center">Illustrations and non-linear narratives.</p>
+          <hr/><div className="center"><h2>Art Projects</h2>
+          <p>Illustrations and non-linear narratives</p>
+          </div>
         <div className="row">
           <Thumbnail
             link="/comics"

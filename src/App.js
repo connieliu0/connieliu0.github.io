@@ -12,8 +12,8 @@ import Auxilio from './Auxilio.js';
 import UXCase from './UXCase.js';
 import Visual from './Visual.js';
 import Habitat from './Habitat.js';
-import Medium from './fun/Medium.js';
-import Pass from './fun/Pass.js';
+import Arcade from './Arcade.js';
+import Twitter from './Twitter.js';
 import Fun from './fun/Fun.js';
 
 import './App.css';
@@ -45,7 +45,8 @@ function App() {
         <Route path="/visual" component={Visual} />
         <Route path="/creativecode" component={CreativeCode} />
         <Route path="/UXcase" component={UXCase} />
-        <Route path="/medium" component={Medium} />
+        <Route path="/arcade" component={Arcade} />
+        <Route path="/twitter" component={Twitter} />
         {/* <Route path="/passiton" component={Pass} /> */}
         <Route path="/habitat" component={Habitat} />
 

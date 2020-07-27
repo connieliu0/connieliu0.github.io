@@ -6,7 +6,7 @@ function Thumbnail(props) {
   if (link1=="no"){
     return(
     <div className="project">
-        <a href={props.web}>
+        <a href={props.web} target="_blank">
         <div className="project-image">
           <img src={props.image} alt="Project Image"/>
         </div>

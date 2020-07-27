@@ -31,23 +31,64 @@ hr{
 }
 h2{
   margin-bottom: 7px;
-  text-align: center;
 }
-.row h2{
-  text-align: left;
+/* Thumbnail Stuff */
+.codecontent .project-title{
+  margin-top:20px;
+}
+.project-code{
+  position: relative;
 }
 .content {
   transition: .5s ease;
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: left;
 }
+.codecontent{
+  text-align: left;
+  transition: none;
+  opacity: 1;
+}
+.buttons{
+  position: relative;
+  left: 50%;
+  top:-5%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 20px;
+}
+.buttons a{
+  transition: .5s ease;
+  opacity: 0;
+  background-color:rgb(255, 242, 242);
+  color: rgb(204, 111, 111);
+  font-size: 16px;
+  padding: 12px ;
+  display: block;
+  width: 88%;
+}
+.project:hover .buttons a{
+  opacity: 1;
+}
+
+.project-title{
+  color: rgb(204, 111, 111);
+}
+.project-description{
+  color: rgb(204, 111, 111);
+}
 .bodytextwide p{
   text-align: center;
 }
 .project:hover .project-image {
+  color: rgb(204, 111, 111);
+  opacity: 0.3;
+}
+.project a:hover .project-image {
   color: rgb(204, 111, 111);
   opacity: 0.3;
 }
@@ -59,11 +100,9 @@ h2{
   margin-top: 40px;
   font-size: 20px;
 }
-.content {
-  position: relative;
-}
+
 .footer{
-  margin-top: 30px;
+  margin-top: 100px;
   margin-bottom: 15px;
 }
 .footer p{
@@ -87,8 +126,8 @@ a{
 }
 a:hover{
   animation-name: fade;
-  animation-duration: 1s;
-  color: rgb(115, 33, 33);
+  animation-duration: .5s;
+  color: rgb(94, 24, 24);
 }
 @keyframes fade {
   from {color: rgb(204, 111, 111);}
@@ -101,11 +140,39 @@ a:hover{
 }
 .projmargins h2{
   text-align: left;
+  margin-top: 0px;
 }
-.center{
+.projmargins h3{
+  margin-top: 20px;
+  text-align: left;
+}
+
+.projmargins h4{
+  margin-bottom: 0px;
+  margin-top: 40px;
+  color: rgb(204, 111, 111);
+}
+.projmargins img{
+  display: block;
+  margin: auto;
+  width: 800px;
+}
+.special{
   text-align: center;
 }
+.special img{
+  width: 250px;
+}
 .center1{
+  margin: auto;
+}
+h2.forty{
+margin-top: 40px;
+}
+.forty h2{
+margin-top: 40px;
+}
+.center{
   text-align: center;
 }
 .parent{
@@ -117,21 +184,19 @@ a:hover{
   display: flex;
    flex-direction: column;
    flex-basis: 100%;
-   flex: 50%;
+   flex: 1;
+   margin-right: 40px;
 }
 .row{
   display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-}
-.col{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 10px;
-}
+    max-width: 1300px;
+    justify-content: center;
+  margin: auto;
+  }
+
 .col img{
   width: 50%;
   position: relative;
@@ -144,13 +209,7 @@ a:hover{
 .projmargins .row{
   flex-wrap: nowrap;
 }
-.row{
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 15px;
-}
+
 .project{
   margin-left: 80px;
   margin-right: 80px;
@@ -158,6 +217,7 @@ a:hover{
 }
 .part1 img{
   margin-top: 20%;
+  margin-bottom: 40px;
   position: relative;
   display: inline-block;
   box-shadow: 7px 7px rgb(255, 173, 176);
@@ -167,6 +227,9 @@ a:hover{
   padding-left: 3%;
   padding-right: 3%;
   width: 60%;
+}
+.part2 h3{
+  text-align: left; 
 }
 .navigation h1{
   padding-left: 7%;
@@ -189,19 +252,62 @@ a:hover{
 .item:hover {
     background-size: 100% 88%;
 }
-.header h1{
-  display: block;
-  text-align: center;
-  margin-bottom: 5px;
+/* header styling */
+.projheader{
+  width: 900px;
+  margin: auto;
 }
-.header h2{
+.center1 img{
+  margin-top: 20px;
+  width: 900px;
+  display: block;
+  margin: auto;
+}
+.projheader h1{
+  display: block;
+  text-align: left;
+  margin-bottom: 0px;
+  margin-right: 30px;
+  margin-top: 0px;
+  padding: 0px;
+}
+.projheader em{
+  font-size: 1.3em;
+  color: #ff7083;
+  margin-top: 0px;
+}
+em{
+  color: #ff7083;
+}
+.projheader h2{
   margin-top: 5px;
   padding-top: 0px;
-  margin-bottom: 25px;
-  font-size: 110%;
-  text-align: center;
-  color: rgb(255, 173, 176);
+  margin-bottom: 5px;
+  font-size: 1.25em;
+  color:black;
 }
+.projheader h3{
+  font-size:1em;
+  color:#ff7083;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: left;
+}
+.projheader .row{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.projheader .col{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin-left: 10px;
+}
+
 h1{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
@@ -222,30 +328,57 @@ h2{
   display: inline-block;
   border: none;
   background: white;
+  font-size: 20px;
 }
 .listtext{
   display: inline-block;
+  margin-right: 45px;
 }
 .listtext1{
   display: flex;
   flex-direction: row;
 }
-.center img{
-  width: 800px;
+
+/* bottom bar */
+.projfooter{
+  display:flex;
 }
-.center1 img{
-  width: 400px;
+.projfooter h3{
+  font-family: 'Quicksand', sans-serif;
+margin-top: 0px;
+color: rgb(204, 111, 111);
+}
+.right{
+  flex: 1;
+}
+.right h2, h3{
+  text-align: right;
+}
+.left{
+  flex: 1;
+}
+.left h2{
+  text-align: left;
+}
+.left h3{
+  text-align: left;
 }
 @media (max-width: 900px) {
+  .part2 {
+    width: 93vw;
 
+  }
   hr{
 margin-top: 3%;
 }
-.center img{
-  width: 90vw;
+.projheader{
+  width: 90vw
 }
 .projmargins img{
   width: 90vw;
+}
+.center1 img{
+ width: 90vw;
 }
 .App-header {
   background-color: #282c34;
@@ -260,9 +393,7 @@ margin-top: 3%;
 .projmargins .row{
   flex-direction: column;
 }
-.col{
-  margin: 0px;
-}
+
   .projmargins{
     margin-left: 5%;
     margin-right: 5%;
@@ -270,5 +401,11 @@ margin-top: 3%;
   .bodytext{
     padding-left: 3%;
     padding-right: 3%;
+  }
+  .projfooter h2{
+    font-size: 1.25em;
+  }
+  .projfooter h3{
+    font-size: .9em;
   }
 }
