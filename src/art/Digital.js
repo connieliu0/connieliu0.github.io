@@ -10,7 +10,9 @@ const art = [
   { original: 'dig/rain.jpg'},
   { original: 'dig/sea.jpg'},
   { original: 'dig/magic.png'},
-  { original: 'dig/penny.png'}
+  { original: 'dig/penny.png'},
+  { original: 'dig/pic1.jpg'}
+
 ];
 function Digital(props) {
   return(
@@ -18,11 +20,15 @@ function Digital(props) {
       <div className="bodytext">
         <hr/>
         <div className="projmargins">
-          <ProjHead
-            title="Digital Illustrations"
-            details="2017-19 | Photoshop/Paint Tool Sai"
-            blurb= "Various digital illustrations I did for fun. First image has won a Scholastic Gold Key."
-          />
+        <ProjHead
+           title="Digital Illustrations"
+           description=""
+           timeline="2017-2019"
+           image=""
+           role="Award"
+           team="First image- Scholastic Gold Key"
+           tools="Photoshop, Paint Tool Sai"
+            />
           <ImageGallery items={art} />
         </div>
         </div>

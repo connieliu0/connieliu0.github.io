@@ -19,11 +19,16 @@ function Comics(props) {
       <div className="bodytext">
         <hr/>
         <div className="projmargins">
-          <ProjHead
-            title="A Particular Feeling"
-            details="Comic | December 2018 | Photoshop/Paint Tool Sai | National Scholastic Arts and Writing Silver Medal"
-            blurb= "A comic I made articulating my feelings about experiencing art and how viewing art hits me close to home as an artist. As for the process the script was typed out and then the sequence of images was thumb nailed physically with pen."
-          />
+        <ProjHead
+           title="A Particular Feeling"
+           description="an abstract comic about feelings and literature"
+           timeline="December 2018, 2 days"
+           image=""
+           role="Award"
+           team="National Scholastic Arts and Writing Silver Medal"
+           tools="Photoshop, Paint Tool Sai"
+            />
+
           <ImageGallery items={images} />
         </div>
         </div>

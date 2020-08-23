@@ -12,10 +12,11 @@ import Auxilio from './Auxilio.js';
 import UXCase from './UXCase.js';
 import Visual from './Visual.js';
 import Habitat from './Habitat.js';
-import Medium from './fun/Medium.js';
-import Pass from './fun/Pass.js';
+import Abillionveg from './Abillionveg.js';
+import Arcade from './Arcade.js';
+import Twitter from './Twitter.js';
 import Fun from './fun/Fun.js';
-
+import ScrolltoTop from './functions/ScrolltoTop.js';
 import './App.css';
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/about" component={About} />
         </div>
         </div>
+        <ScrolltoTop />
         <Route path="/comics" component={Comics} />
         <Route path="/traditional" component={Traditional} />
         <Route path="/digital" component={Digital} />
@@ -45,8 +47,9 @@ function App() {
         <Route path="/visual" component={Visual} />
         <Route path="/creativecode" component={CreativeCode} />
         <Route path="/UXcase" component={UXCase} />
-        <Route path="/medium" component={Medium} />
-        {/* <Route path="/passiton" component={Pass} /> */}
+        <Route path="/arcade" component={Arcade} />
+        <Route path="/twitter" component={Twitter} />
+        <Route path="/abillionveg" component={Abillionveg} />
         <Route path="/habitat" component={Habitat} />
 
       </div>

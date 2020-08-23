@@ -20,37 +20,38 @@ function Design(props) {
     <div className="bodytextwide">
     <div className="titledesc">
       <p>Hi there! My name's Connie and I'm <span className="typewriter">{tagline}</span></p>
-      <p>Currently <a href="https://summerofcode.withgoogle.com/">@Google Summer of Code</a> and <a href="https://www.abillionveg.com/">@abillionveg</a>, Designer of <a href="https://devpost.com/software/ponder-tiw5y3">Ponder</a></p>
     </div>
-      <hr/><h2>Design Projects</h2>
+    <div className="smalltitle">
+    <p>Currently Design/Development <a href="https://medium.com/processing-foundation/announcing-processing-foundation-google-summer-of-code-2020-af39dbf41d25" target="_blank">@Google Summer of Code</a> working on expanding the <a href="https://github.com/connieliu0/p5.js-showcase" target="_blank">p5.js Showcase</a></p> 
+    <p>UX Intern <a href="https://www.abillionveg.com/" target="_blank">@abillionveg</a> ideating on creating communities around veganism (contact me for details)</p>
+    <p>Designer of <a href="https://devpost.com/software/ponder-tiw5y3" target="_blank">Ponder</a>, a mental health journaling app, and <a href="https://ldjam.com/events/ludum-dare/46/pass-it-on" target="_blank">Pass it On</a>, an online whisper down the lane game</p>
+    </div>
+      <hr/>
+      <div className="center"><h2>Design Projects</h2></div>
       <div className="row">
       <Thumbnail
-          web="https://medium.com/@connie_liu/finding-your-own-nests-a-twitter-case-study-970d2aa4efd8?sk=a5b747a828806ab667d438b79978d783"
-          link="no"
+          link="/abillionveg"
+          image= "images/abillionveg.png"
+          title="abillionveg UX Internship"
+          description="Summer 2020"
+        />
+      <Thumbnail
+          link="/twitter"
           image= "images/twitter.png"
           title="Twitter Groups Concept"
           description="UX Case Study"
         />
-
+       <Thumbnail
+          link="/arcade"
+          image= "images/arcade.png"
+          title="Arcade App Design"
+          description="Adobe 48 hour Creative Jam"
+        />
         <Thumbnail
           link="/Auxilio"
           image= "images/auxilio.png"
           title="Auxilio Web App"
           description="BigRed//Hacks Beginner's Prize"
-        />
-        <Thumbnail
-          web="https://xd.adobe.com/view/bf82c9a1-3633-495a-7c74-925d62caa59f-c9b3/"
-          link="no"
-          image= "images/arcade.png"
-          title="Arcade App (details coming soon)"
-          description="Adobe 48 hour Creative Jam"
-        />
-        <Thumbnail
-          web="https://medium.com/@connie_liu/heart-tube-heart-designing-a-connector-for-storytelling-d49b1767a0b3"
-          link="no"
-          image="images/experiment.png"
-          title="Heart-Tube-Heart"
-          description="Experimental Design"
         />
         <Thumbnail
           link="/habitat"
@@ -64,7 +65,13 @@ function Design(props) {
           title="Visual and Graphic Design"
           description="Adobe Photoshop/Paint Tool Sai"
         />
-
+        <Thumbnail
+          web="https://medium.com/@connie_liu/heart-tube-heart-designing-a-connector-for-storytelling-d49b1767a0b3"
+          link="no"
+          image="images/experiment.png"
+          title="Heart-Tube-Heart"
+          description="Experimental Design"
+        />
       </div>
     </div>
     <Footer
